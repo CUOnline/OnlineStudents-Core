@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<img id="logo" src="~/images/cu-online.png" />
+<div id="content" class="text-center">
+    <h1>403</h1>
+    <h2>Access Denied</h2>
+    <h3 class="text-muted">
+        Sorry, but you don't have permission to use this tool.
+    </h3>
+
+    <form asp-action="ExternalLogOut" method="post">
+        <button type="submit" id="LogOutLink" class="btn btn-warning">Log Out</button>
+    </form>
+</div>

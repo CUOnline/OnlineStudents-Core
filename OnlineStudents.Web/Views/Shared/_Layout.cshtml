@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineStudents.Web</title>
+
+    <environment include="Development">
+        <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+        <link href="~/lib/buttons/css/buttons.bootstrap4.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.css" />
+
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/popper.js/umd/popper.js"></script>
+        <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+        <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+        <script src="~/lib/buttons/js/dataTables.buttons.js"></script>
+        <script src="~/lib/buttons/js/buttons.bootstrap4.js"></script>
+        <script src="~/lib/buttons/js/buttons.html5.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/lib/datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+        <link href="~/lib/buttons/css/buttons.bootstrap4.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/popper.js/umd/popper.min.js"></script>
+        <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+        <script src="~/lib/buttons/js/dataTables.buttons.min.js"></script>
+        <script src="~/lib/buttons/js/buttons.bootstrap4.min.js"></script>
+        <script src="~/lib/buttons/js/buttons.html5.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+</head>
+<body>
+    <div class="container-fluid text-center m-5">
+        <img src="~/images/cu-online.png" />
+    </div>
+    <div class="container main-section col-8 p-5">
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
